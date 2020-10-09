@@ -1,0 +1,35 @@
+name: CodeBlog
+description: A new Flutter project.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_markdown: ^0.4.3
+  provider: ^4.3.2
+  equatable: ^1.2.3
+  material_design_icons_flutter: ^4.0.5345
+  zefyr:
+    path: packages/zefyr
+  quill_delta: ^1.0.2
+
+dependency_overrides:
+  notus:
+    path: packages/notus
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: FiraSans
+      fonts:
+        - asset: assets/fonts/FiraSans/FiraSans-Regular.ttf
+        - asset: assets/fonts/FiraSans/FiraSans-SemiBold.ttf
+          weight: 600
